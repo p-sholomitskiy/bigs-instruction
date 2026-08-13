@@ -5,6 +5,9 @@ import { storeToRefs } from 'pinia';
 import { useAppStore } from '../stores/app.ts';
 
 const { currentContent } = storeToRefs(useAppStore());
+const openLink = ():void => {
+  window.open('https://bigsgo.link', '_blank');
+};
 </script>
 
 <template>
@@ -31,7 +34,10 @@ const { currentContent } = storeToRefs(useAppStore());
         {{ currentContent.cta.subText }}
       </div>
 
-      <button class="cta-banner__button">
+      <button
+        class="cta-banner__button"
+        @click="openLink"
+      >
         {{ currentContent.cta.buttonText }}
       </button>
     </div>
