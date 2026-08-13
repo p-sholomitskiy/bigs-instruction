@@ -33,11 +33,13 @@ watch(
     />
     <DesktopInstructionList v-if="deviceType === 'desktop'" />
     <InstructionList
+      v-if="deviceType === 'android'"
       :content-data="CONTENT_DATA"
       :language="'en'"
       :os="'android'"
     />
     <InstructionList
+      v-if="deviceType === 'ios'"
       :content-data="CONTENT_DATA"
       :language="'en'"
       :os="'ios'"
