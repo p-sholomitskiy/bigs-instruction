@@ -1,10 +1,11 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 
 import HomePage from '../pages/home-page.vue';
 import { DEFAULT_LANGUAGE, LANGUAGES } from '../constants/languages.ts';
 
 const router = createRouter({
-  history: createWebHistory(),
+  //TODO: change to createWebHistory before realese
+  history: createWebHashHistory(),
 
   routes: [
     {
