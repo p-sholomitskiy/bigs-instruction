@@ -5,7 +5,7 @@ import QrSection from '../components/qr-section.vue';
 import InstructionList from '../components/device-instruction/instruction-list.vue';
 import { CONTENT_DATA } from '../constants/text-content.ts';
 import { storeToRefs } from 'pinia';
-import { watch } from 'vue';
+import { onMounted, watch } from 'vue';
 import { useAppStore } from '../stores/app.ts';
 import DesktopInstructionList from '../components/device-instruction/desktop-instruction-list.vue';
 import { useRoute } from 'vue-router';
@@ -23,6 +23,11 @@ watch(
   },
   { immediate: true },
 );
+
+onMounted(() => {
+  console.log(`User Agent: ${navigator.userAgent}`);
+  console.log(`Platfotm: ${navigator.platform}`);
+});
 </script>
 
 <template>
