@@ -100,41 +100,38 @@ const openLink = ():void => {
   }
 
   &__button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
 
-    width: 160px;
-    height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-    border: 2px solid transparent;
-    border-radius: 14px;
+  width: 160px;
+  height: 42px;
+  padding: 0;
 
-    background:
-      linear-gradient(
-        97.49deg,
-        #f6ef59 2.88%,
-        #ff6b00 100.54%
-      ) padding-box,
-      linear-gradient(
-        94.68deg,
-        rgba(255, 167, 50, 0.24) 2.65%,
-        rgba(255, 232, 76, 0.24) 97.4%
-      ) border-box;
+  border: none;
+  border-radius: 14px;
 
-    box-shadow:
-      0 0 37.68px 0 rgba(255, 179, 55, 0.55),
-      inset 7.06px 4.71px 9.42px 0 rgba(178, 96, 0, 0.25);
+  background: linear-gradient(
+    97.49deg,
+    #f6ef59 2.88%,
+    #ff6b00 100.54%
+  );
 
-    cursor: pointer;
-    outline: none;
+  box-shadow:
+    0 0 37.68px 0 rgba(255, 179, 55, 0.55),
+    inset 7.06px 4.71px 9.42px 0 rgba(178, 96, 0, 0.25);
 
-    color: #0a0a0a;
-    font-family: Gilroy;
-    font-size: 16.53px;
-    font-weight: 700;
-    line-height: normal;
-  }
+  cursor: pointer;
+  outline: none;
+
+  color: #0a0a0a;
+  font-family: Gilroy;
+  font-size: 16.53px;
+  font-weight: 700;
+  line-height: normal;
+}
 
   @media (min-width: $breakpoint-desktop) {
     padding: 52px 86px;
