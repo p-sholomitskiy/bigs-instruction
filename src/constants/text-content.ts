@@ -4,7 +4,7 @@ import type { DeviceOS } from './operation-system-list';
 import LogoAndroidImage from '../assets/device-logo/android.svg';
 import LogoIosImage from '../assets/device-logo/ios.svg';
 import LogoDesktopImage from '../assets/device-logo/chrome.svg';
-import QrCodeImage from '../assets/QR.svg';
+import QrCodeImage from '../assets/qrcode.webp';
 
 import AndroidImageOne from '../assets/instruction-images-webp/android/android-1.webp';
 import AndroidImageTwo from '../assets/instruction-images-webp/android/android-2.webp';

@@ -63,12 +63,29 @@ const { currentContent } = storeToRefs(useAppStore());
     }
 
     &__image {
-      display: flex;
-      padding: 20px;
-      align-items: center;
-      border-radius: 20px;
-      background: #0C0D0E;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  width: 213px;
+  height: 213px;
+  padding: 20px;
+
+  flex-shrink: 0;
+
+  border-radius: 20px;
+  background: #0C0D0E;
+
+  img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+  }
+}
 
     &__text-wrapper {
       display: flex;
