@@ -38,11 +38,13 @@ onMounted(() => {
     />
     <DesktopInstructionList v-if="deviceType === 'desktop'" />
     <InstructionList
+      v-if="deviceType === 'android' || deviceType === 'desktop'"
       :content-data="CONTENT_DATA"
       :language="'en'"
       :os="'android'"
     />
     <InstructionList
+      v-if="deviceType === 'ios' || deviceType === 'desktop'"
       :content-data="CONTENT_DATA"
       :language="'en'"
       :os="'ios'"
