@@ -76,9 +76,12 @@ const currentDeviceData = computed(() => {
   }
 
   &__image {
-    display: block;
-    width: 100%;
-    height: auto;
+      flex: 1 1 0;
+      min-width: 0;
+      width: 0;
+      height: 100%;
+
+      object-fit: contain;
   }
 
   &_reverse {
@@ -87,8 +90,10 @@ const currentDeviceData = computed(() => {
 
   &__image-wrapper{
       display: flex;
+      width: 100%;
       height: 215px;
       gap: 15px;
+      overflow: hidden;
     }
 
   @media (min-width: $breakpoint-desktop) {
@@ -124,6 +129,8 @@ const currentDeviceData = computed(() => {
     &__image-wrapper{
       height: 400px;
       gap: 30px;
+      overflow: none;
+      width: auto
     }
   }
 }
