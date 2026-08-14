@@ -6,17 +6,17 @@ import LogoIosImage from '../assets/device-logo/ios.svg';
 import LogoDesktopImage from '../assets/device-logo/chrome.svg';
 import QrCodeImage from '../assets/QR.svg';
 
-import AndroidImageOne from '../assets/instruction-images/android/android-1.png';
-import AndroidImageTwo from '../assets/instruction-images/android/android-2.png';
-import AndroidImageThree from '../assets/instruction-images/android/android-3.png';
+import AndroidImageOne from '../assets/instruction-images-webp/android/android-1.webp';
+import AndroidImageTwo from '../assets/instruction-images-webp/android/android-2.webp';
+import AndroidImageThree from '../assets/instruction-images-webp/android/android-3.webp';
 
-import IOSImageOne from '../assets/instruction-images/ios/ios-1.png';
-import IOSImageTwo from '../assets/instruction-images/ios/ios-2.png';
-import IOSImageThree from '../assets/instruction-images/ios/ios-3.png';
+import IOSImageOne from '../assets/instruction-images-webp/ios/ios-1.webp';
+import IOSImageTwo from '../assets/instruction-images-webp/ios/ios-2.webp';
+import IOSImageThree from '../assets/instruction-images-webp/ios/ios-3.webp';
 
-import DesktopImageOne from '../assets/instruction-images/desktop/desktop-1.png';
-import DesktopImageTwo from '../assets/instruction-images/desktop/desktop-2.png';
-import DesktopImageThree from '../assets/instruction-images/desktop/desktop-3.png';
+import DesktopImageOne from '../assets/instruction-images-webp/desktop/desktop-1.webp';
+import DesktopImageTwo from '../assets/instruction-images-webp/desktop/desktop-2.webp';
+import DesktopImageThree from '../assets/instruction-images-webp/desktop/desktop-3.webp';
 
 export type ContentData = Record<LanguageCode, DeviceContentData & {
   qr: QrDataContent;

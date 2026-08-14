@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import CtaBannerBackgroundDesktopImage from '../assets/cta-banner-desktop.png';
-import CtaBannerBackgroundMobileImage from '../assets/cta-banner-mob.png';
+import CtaBannerBackgroundDesktopImage from '../assets/cta-banner-desktop.webp';
+import CtaBannerBackgroundMobileImage from '../assets/cta-banner-mob.webp';
 import { storeToRefs } from 'pinia';
 import { useAppStore } from '../stores/app.ts';
 
