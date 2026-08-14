@@ -107,7 +107,7 @@ const openLink = ():void => {
     width: 160px;
     height: 42px;
 
-    border: 2.35px solid transparent;
+    border: 2px solid transparent;
     border-radius: 14px;
 
     background:
